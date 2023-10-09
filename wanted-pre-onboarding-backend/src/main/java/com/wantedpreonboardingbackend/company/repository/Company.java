@@ -26,7 +26,7 @@ public class Company {
 
     private String region;
 
-
+    //디렉터리 삭제
     @OneToMany(mappedBy = "company")
     private List<RecruitmentNotice> recruitmentNotices=new ArrayList<>();
 
