@@ -4,6 +4,7 @@ import com.wantedpreonboardingbackend.company.dto.CompanyResponseDto;
 import com.wantedpreonboardingbackend.company.repository.Company;
 import com.wantedpreonboardingbackend.recruitmentnotice.dto.RecruitmentNoticeDetailResponseDto;
 import com.wantedpreonboardingbackend.recruitmentnotice.dto.RecruitmentNoticeResponseDto;
+import com.wantedpreonboardingbackend.user.repository.User;
 import lombok.*;
 
 import javax.persistence.*;
@@ -12,7 +13,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Entity
-@Table
+@Table(name = "recruitment_notice")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -34,6 +35,13 @@ public class RecruitmentNotice {
     private String recruitmentDetails;
 
     private String stack;
+    @OneToMany(mappedBy = "userId")
+   private List<User> users;
+
+    public void setUsers(User user){
+        this.users.add(user);
+    }
+
     public static RecruitmentNoticeResponseDto RecruitmentNoticeEntityToResponseDto(RecruitmentNotice recruitmentNotice){
         return RecruitmentNoticeResponseDto.builder()
                 .recruitmentNoticeId(recruitmentNotice.getRecruitmentNoticeId())
