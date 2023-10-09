@@ -1,4 +1,4 @@
-<img width="1400" alt="스크린샷 2023-10-09 오후 11 37 23" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/143060c3-5e70-4083-83a2-85e5d59aa640"># wantedpreonboardingbackend
+# wantedpreonboardingbackend
 
 ## 프로젝트 
 ### 개요
@@ -192,63 +192,103 @@
     - 사용자는 1회만 지원 가능합니다.
     </aside>
 ## 프로젝트 구현 내용
-1. 모든 기능
-<img width="1149" alt="스크린샷 2023-10-09 오후 11 32 01" src="ht<img width="1072" alt="스크린샷 2023-10-09 오후 11 31 56" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/304537c6-dada-40d2-b61c-e0356d86e579">
-tps://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/0de52cbf-439f-4eb3-8dcb-ec113a2112ea">
-![Uploading 스크린샷 2023-10-09 오후 11.31.56.png…]()
 
-2.
+1.
 <img width="1390" alt="스크린샷 2023-10-09 오후 11 37 07" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/ebb5f383-fadb-4dad-9d96-9bfc4deaa0a7">
 기능: 회사의 이름 일부로 공고를 찾는 기능
 
+결과:
 
-4.
+<img width="672" alt="스크린샷 2023-10-10 오전 12 00 38" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/d70ade0a-9fbc-4102-9568-1d5f12c2b3c4">
+
+
+
+2.
 <img width="1373" alt="스크린샷 2023-10-09 오후 11 37 12" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/6ae63d82-cc88-42ad-862c-439c071610de">
 기능: 채용 공고의 세부사항을 보는 기능
 
-5.
+결과:
+
+<img width="732" alt="스크린샷 2023-10-10 오전 12 00 17" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/3e8e7eac-8781-403b-9845-6b51cade8952">
+
+
+3.
 <img width="1402" alt="스크린샷 2023-10-09 오후 11 37 02" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/680210ce-0286-441a-9335-0c83e37b8350">
 기능: 모든 공고를 보는 기능
 
-6.
+결과:
+
+<img width="569" alt="스크린샷 2023-10-09 오후 11 59 58" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/3763c8bf-f920-411b-aea3-57aa52c3ab09">
+
+
+4.
 <img width="1401" alt="스크린샷 2023-10-09 오후 11 36 54" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/a22a1bef-f88f-4e35-9c7b-88e6d6439330">
-기능: 공고를 등록하는 기능
 
-7.
-<img width="1401" alt="스크린샷 2023-10-09 오후 11 36 48" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/1643b3a3-7b89-42dd-8146-3a3b0e0d1388">
-기능: 공고를 지우는 기능
-
-8.
-<img width="1397" alt="스크린샷 2023-10-09 오후 11 36 44" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/8bc035be-db96-4b53-9793-68c1d417a81e">
 기능: 공고를 등록하는 기능
 
 결과:
+
+
+5.
+<img width="1401" alt="스크린샷 2023-10-09 오후 11 36 48" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/1643b3a3-7b89-42dd-8146-3a3b0e0d1388">
+
+기능: 공고를 지우는 기능
+
+
+6.
+<img width="1397" alt="스크린샷 2023-10-09 오후 11 36 44" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/8bc035be-db96-4b53-9793-68c1d417a81e">
+
+기능: 공고를 등록하는 기능
+
+결과:
+
 <img width="541" alt="스크린샷 2023-10-09 오후 11 53 44" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/aa942cdc-2ede-40e6-972e-401b047f3e32">
 <img width="650" alt="스크린샷 2023-10-09 오후 11 54 13" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/e3d0f075-948d-4667-b47c-4b0e9b1b3dab">
 <img width="831" alt="스크린샷 2023-10-09 오후 11 54 29" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/0e5f963c-266e-4a5f-95ff-89af85c7caee">
 <img width="777" alt="스크린샷 2023-10-09 오후 11 54 39" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/13471555-83db-4a32-951d-d49b5fc63857">
 
 
-
-10.
+7.
 <img width="1374" alt="스크린샷 2023-10-09 오후 11 36 37" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/25d3433a-db88-4211-bbf1-754894d406ce">
+
 기능: 회사를 등록하는 기능
 
-11.
+결과:
+
+<img width="403" alt="스크린샷 2023-10-09 오후 11 59 05" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/1177de79-c08d-4591-bcd7-c998ac588585">
+
+
+8.
 <img width="1376" alt="스크린샷 2023-10-09 오후 11 37 16" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/d83b1439-1eca-4760-8009-83b7f98cb5bf">
+
 기능: 채용공고 하나만 보는 기능
 
-12.
+결과:
+
+
+
+9.
 <img width="1321" alt="스크린샷 2023-10-09 오후 11 37 21" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/cf7f2401-3076-4ae4-b237-1f5297ab0e4e">
+
 기능: 회원을 등록하는 기능
 
 결과:
-<img width="784" alt="스크린샷 2023-10-09 오후 11 53 12" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/2dda1e58-de5c-47cf-938d-cada1697e413">
-<img width="815" alt="스크린샷 2023-10-09 오후 11 53 26" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/3e4fbde6-4c0c-4304-8615-5cc69f2280b5">
+
+<img width="617" alt="스크린샷 2023-10-10 오전 12 01 10" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/1c463538-9454-4d34-b9ea-eb782b421cc5">
 
 
+10.
 <img width="1400" alt="스크린샷 2023-10-09 오후 11 37 23" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/3e56c9f2-c596-41ac-bba0-f90469bc3d40">
+
 기능: 사용자가 채용공고를 등록하는 기능
+
+결과:
+<img width="590" alt="스크린샷 2023-10-10 오전 12 01 25" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/66a00f4b-7b94-42ed-9cbd-b8735369db07">
+
+2개이상의 회사에 지원할 경우
+
+<img width="598" alt="스크린샷 2023-10-10 오전 12 01 36" src="https://github.com/Taehwan2/wantedpreonboardingbackend/assets/97010824/5d386615-7bae-4886-b8b5-3d925c688add">
+
 
 ### BE
 #### 장태환
