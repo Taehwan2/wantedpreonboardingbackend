@@ -14,6 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Locale;
@@ -25,19 +26,25 @@ public class RecruitmentNoticeService {
 
     private final RecruitmentNoticeRepository recruitmentNoticeRepository;
     private final CompanyService companyService;
+
+    @Transactional
     public RecruitmentNotice enroll(Long companyId,RecruitmentNotice recruitmentNotice) {
         recruitmentNotice.setCompany(companyService.findByCompanyId(companyId));
         return recruitmentNoticeRepository.save(recruitmentNotice);
     }
+
+    @Transactional
     public RecruitmentNotice enroll(RecruitmentNotice recruitmentNotice) {
         return recruitmentNoticeRepository.save(recruitmentNotice);
     }
 
-
+    @Transactional(readOnly = true)
     public RecruitmentNotice getOne(Long recruitmentNoticeId) {
         return recruitmentNoticeRepository.findById(recruitmentNoticeId).orElseThrow(()->new BusinessLogicException(ExceptionCode.NOSUCHFOUND));
     }
 
+
+    @Transactional(readOnly = true)
     public Response.API<List<RecruitmentNoticeResponseDto>> getAll(Pageable pageable) {
        var body =  recruitmentNoticeRepository.findAll(pageable);
         var page = convertPage(body);
@@ -51,11 +58,12 @@ public class RecruitmentNoticeService {
 
     }
 
+    @Transactional
     public void deleteOne(Long recruitmentNoticeId) {
         recruitmentNoticeRepository.deleteById(recruitmentNoticeId);
     }
 
-
+    @Transactional(readOnly = true)
     public Response.API<List<RecruitmentNoticeResponseDto>> getOneByName(String name, Pageable pageable) {
         var body = recruitmentNoticeRepository.findAllByName(name,pageable);
         var page = convertPage(body);

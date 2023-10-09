@@ -19,7 +19,7 @@ public class UserRecruitmentNoticeServie {
 
     private final UserService userService;
     private final RecruitmentNoticeService recruitmentNoticeService;
-    @Transactional()
+    @Transactional
     public User enrollUserRecruitmentNotice(Long userId, Long recruitmentId) {
         User user = userService.findById(userId);
         RecruitmentNotice recruitmentNotice = recruitmentNoticeService.getOne(recruitmentId);
