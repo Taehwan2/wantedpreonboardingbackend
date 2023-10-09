@@ -25,7 +25,7 @@ public class RecruitmentNoticeController {
     private final RecruitmentNoticeService recruitmentNoticeService;
     private final RecruitmentNoticeMapper recruitmentNoticeMapper;
 
-    @PostMapping("/enroll")
+    @PostMapping("/")
     public Response.SuccessResponse enrollRecruitmentNotice(@RequestBody RecruitmentNoticeRequestDto recruitmentNoticeRequestDto){
         log.info("what is {}",recruitmentNoticeRequestDto.getRecruitmentCompensation());
         RecruitmentNotice recruitmentNotice = recruitmentNoticeService.enroll(recruitmentNoticeRequestDto.getCompanyId(),recruitmentNoticeMapper.recruitmentNoticeRequestToEntity(recruitmentNoticeRequestDto));
