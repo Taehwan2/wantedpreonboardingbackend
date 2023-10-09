@@ -40,25 +40,25 @@ public class RecruitmentNoticeController {
         return  new Response.SuccessResponse(recruitmentNotice.RecruitmentNoticeEntityToResponseDto(recruitmentNotice), HttpStatus.ACCEPTED);
     }
 
-    @GetMapping("/getOneByCompanyName/{name}")
+    @GetMapping("/companyName/{name}")
     public Response.SuccessResponse getOneRecruitmentNotice(@PageableDefault(sort = "recruitmentNoticeId",direction = Sort.Direction.DESC)Pageable pageable,@PathVariable(name = "name")String name){
         Response.API<List<RecruitmentNoticeResponseDto>> api = recruitmentNoticeService.getOneByName(name,pageable);
         return  new Response.SuccessResponse(api, HttpStatus.ACCEPTED);
     }
 
-    @GetMapping("/getOneDetail/{recruitmentNoticeId}")
+    @GetMapping("/detail/{recruitmentNoticeId}")
     public Response.SuccessResponse getOneDetailRecruitmentNotice(@PathVariable(name = "recruitmentNoticeId")Long recruitmentNoticeId){
         RecruitmentNotice recruitmentNotice = recruitmentNoticeService.getOne(recruitmentNoticeId);
         return  new Response.SuccessResponse(recruitmentNotice.RecruitmentNoticeEntityToDetailResponseDto(recruitmentNotice), HttpStatus.ACCEPTED);
     }
 
-    @GetMapping("/getAll")
+    @GetMapping("/all")
     public Response.SuccessResponse getALlRecruitmentNotice(@PageableDefault(sort = "recruitmentNoticeId",direction = Sort.Direction.DESC) Pageable pageable){
        Response.API<List<RecruitmentNoticeResponseDto>> listAPI = recruitmentNoticeService.getAll(pageable);
         return  new Response.SuccessResponse(listAPI, HttpStatus.ACCEPTED);
     }
 
-    @PatchMapping("/update/{recruitmentNoticeId}")
+    @PatchMapping("/{recruitmentNoticeId}")
     public Response.SuccessResponse patchRecruitmentNotice(@PathVariable(name ="recruitmentNoticeId") Long recruitmentNoticeId, @RequestBody RecruitmentNoticePatchDto recruitmentNoticePatchDto){
        RecruitmentNotice recruitmentNotice= recruitmentNoticeService.getOne(recruitmentNoticeId);
        recruitmentNoticeMapper.recruitmentNoticePatchDtoToEntity(recruitmentNoticePatchDto,recruitmentNotice);
@@ -66,7 +66,7 @@ public class RecruitmentNoticeController {
        return new Response.SuccessResponse(recruitmentNotice.RecruitmentNoticeEntityToResponseDto(recruitmentNotice),HttpStatus.ACCEPTED);
     }
 
-    @DeleteMapping("/delete/{recruitmentNoticeId}")
+    @DeleteMapping("/{recruitmentNoticeId}")
     public HttpStatus deleteOne(@PathVariable(name = "recruitmentNoticeId")Long recruitmentNoticeId){
         recruitmentNoticeService.deleteOne(recruitmentNoticeId);
         return HttpStatus.ACCEPTED;
