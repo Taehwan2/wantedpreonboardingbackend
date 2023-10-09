@@ -34,7 +34,7 @@ public class RecruitmentNoticeController {
     }
 
 
-    @GetMapping("/getOne/{recruitmentNoticeId}")
+    @GetMapping("/one/{recruitmentNoticeId}")
     public Response.SuccessResponse getOneRecruitmentNotice(@PathVariable(name = "recruitmentNoticeId")Long recruitmentNoticeId){
         RecruitmentNotice recruitmentNotice = recruitmentNoticeService.getOne(recruitmentNoticeId);
         return  new Response.SuccessResponse(recruitmentNotice.RecruitmentNoticeEntityToResponseDto(recruitmentNotice), HttpStatus.ACCEPTED);
