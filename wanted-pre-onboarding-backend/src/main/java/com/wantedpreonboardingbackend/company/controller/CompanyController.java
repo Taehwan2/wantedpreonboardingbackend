@@ -21,7 +21,7 @@ public class CompanyController {
 
     private final CompanyService companyService;
 
-    @PostMapping("/enroll")
+    @PostMapping("")
     public Response.SuccessResponse enrollCompany(@RequestBody CompanyRequestDto companyRequestDto){
         Company company = companyService.enroll(companyRequestDto.CompanyDtoToEntity(companyRequestDto));
         return new Response.SuccessResponse<>(company.CompanyEntityToResponseDto(company), HttpStatus.CREATED);
