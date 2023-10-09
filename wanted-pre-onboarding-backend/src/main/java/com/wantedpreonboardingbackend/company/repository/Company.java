@@ -1,9 +1,7 @@
 package com.wantedpreonboardingbackend.company.repository;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import com.wantedpreonboardingbackend.company.dto.CompanyResponseDto;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -11,6 +9,7 @@ import javax.persistence.*;
 @Table(name = "company")
 @Getter
 @Setter
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class Company {
@@ -21,4 +20,12 @@ public class Company {
     private String country;
 
     private String region;
+
+    public static CompanyResponseDto CompanyEntityToResponseDto(Company company){
+        return CompanyResponseDto.builder()
+                .companyId(company.getCompanyId())
+                .country(company.getCountry())
+                .region(company.getRegion())
+                .build();
+    }
 }
