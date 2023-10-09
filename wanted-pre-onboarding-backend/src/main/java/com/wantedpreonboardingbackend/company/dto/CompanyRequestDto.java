@@ -11,12 +11,15 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class CompanyRequestDto {
+
+    private String companyName;
     private String country;
 
     private String region;
 
     public static Company CompanyDtoToEntity(CompanyRequestDto companyRequestDto){
         return Company.builder()
+                .companyName(companyRequestDto.getCompanyName())
                 .country(companyRequestDto.getCountry())
                 .region(companyRequestDto.getRegion())
                 .build();

@@ -13,6 +13,8 @@ import lombok.NoArgsConstructor;
 public class CompanyResponseDto {
     private Long companyId;
 
+    private String companyName;
+
     private String country;
 
     private String region;
